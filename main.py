@@ -1,2 +1,11 @@
+import logging
+import requests
+
 def main():
-    print("hello world!!")
+    res = requests.get('https://scotch.io')
+    logging.info('Hola')
+    logging.warning('Not working')
+    print(res.headers)
+    print("Hola")
+
+main()
